@@ -44,8 +44,8 @@ class Board:
         if self.game[0][0] == self.game[1][1] and self.game[0][0] == self.game[2][2]:
             if self.game[0][0] == player:
                 return True
-        elif self.game[2][2] == self.game[1][1] and self.game[2][2] == self.game[0][0]:
-            if self.game[0][0] == player:
+        elif self.game[0][2] == self.game[1][1] and self.game[0][2] == self.game[2][0]:
+            if self.game[1][1] == player:
                 return True
         return False
 
